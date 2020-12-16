@@ -1,5 +1,3 @@
-pragma experimental ABIEncoderV2;
-
 function compareStrings(string memory s1, string memory s2) returns (bool) {
     return keccak256(abi.encodePacked(s1)) == keccak256(abi.encodePacked(s2));
 }
@@ -50,4 +48,4 @@ contract D is B, C {
     }
 }
 // ----
-// TypeError 4259: (440-445): Invalid type for argument in the function call. A contract type or an integer type is required, but type(contract super B) provided.
+// TypeError 4259: (405-410): Invalid type for argument in the function call. A contract type or an integer type is required, but type(contract super B) provided.

@@ -1,5 +1,4 @@
 pragma abicoder v2;
-
 enum E { A, B, C }
 library L {
     function get(mapping(E => uint8) storage table, E k) external returns (uint8) {
